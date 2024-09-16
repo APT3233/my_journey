@@ -1,4 +1,4 @@
-# Study Plan for Mastering SQL, JavaScript, Data Structures & Algorithms, and Streaming Call Technology (C/C++)
+## **Study Plan for Mastering SQL, JavaScript, Data Structures & Algorithms, and Streaming Call Technology (C/C++)**
 
 ## Goal
 - **Objective**: Become proficient in SQL, JavaScript, Data Structures, and Algorithms, and build a web system using streaming call technology with C and C++ within 2 months.
