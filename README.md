@@ -34,6 +34,10 @@
    - Study WebRTC, RTP, or other streaming technologies.
    - Implement small prototypes in C and C++ for call handling.
    - Review open-source projects for insights into streaming frameworks.
+      - Apache Kafka: https://kafka.apache.org -- https://github.com/apache/kafka
+      - Apache Flink: https://flink.apache.org -- https://github.com/apache/flink
+      - Apache Spark Streaming: https://spark.apache.org/streaming -- https://github.com/apache/spark 
+      - Apache Storm: https://storm.apache.org -- https://github.com/apache/storm
 
 4. **Homework (1h30m daily)**:
    - Practice coding exercises.
