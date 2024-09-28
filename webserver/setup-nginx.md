@@ -2,7 +2,7 @@
 1. Install nginx & certbot(SSL)
     ```sh
     sudo apt update 
-    sudo apt install nginx certbot python3-certbot-nginx
+    sudo apt install nginx certbot python3-certbot-nginx make gcc neofetch
     ```
 
 2. Configure nginx
@@ -16,7 +16,7 @@
             listen 80;
             server_name example.com www.example.com;  
             
-            return 301 https://$server_name$request_uri;
+            return 301 https://$host$request_uri;
         }
         server {
             listen 443 ssl;
@@ -25,7 +25,7 @@
             ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
             ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
 
-            ssl_session_cache shared:le_nginx_SSL:1m;
+            ssl_session_cache shared:le_nginx_SSL:10;
             ssl_session_timeout 1440m;
 
             ssl_protocols TLSv1.2 TLSv1.3;
@@ -50,8 +50,12 @@
             ssl_certificate_key /path/to/your/key.pem;
 
             location / {
-                proxy_pass http://localhost:4444;
+                proxy_pass http://localhost:4444;  # Chuyển hướng tất cả các yêu cầu đến web server ở cổng 4444
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
                 proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
                 proxy_set_header X-Real-IP $remote_addr;
                 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Proto $scheme;
