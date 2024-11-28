@@ -1,4 +1,98 @@
 # CSS CHEATSHEET
+## Template
+1. Start 
+    ```CSS
+    :root{
+        --color-title: rgb(16, 197, 197);
+        --color-backbg: #f9f9f9;
+        --color-text: #333; 
+        --color-link: #007bff; 
+        --color-link__hover: #0056b3;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: var(--color-backbg);
+        font-family: 'Roboto', sans-serif;
+    }
+    li a{
+        text-decoration: none;
+        color: darkturquoise;
+        font-size: 19px;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    ```
+2. Logo
+    ```css
+    #logo{
+        display: block;
+        margin: 0 auto;
+        width: 70px;
+        height: auto;
+        object-fit: cover;
+    }
+    ```
+3. Container
+    ```css
+    .container{
+        width: 100%;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+4. Button
+4.1 `div`
+    ```css
+    .button {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        background-color: #ff9933;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-weight: 800;
+        margin-top: 20px;
+        color: white;
+    }
+
+    .button:hover {
+        background-image: linear-gradient(144deg, #FF9933, #FF66B2 50%, #FF0033);
+        transform: translateY(-2px);
+    }
+    ```
+4.2 `button`
+    ```css
+    button{
+        background-color: #ff9933;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-weight: 800;
+        color: white;
+    }
+    button:hover{
+        background-image: linear-gradient(144deg, #FF9933, #FF66B2 50%, #FF0033);
+        transform: translateY(-2px);
+    }
+    ```
+5. Footer
+5.1 Row
+    ```css
+
+    ```
+5.2 Column
+    ```css
+
+    ```
 
 ## Background
 1. <code>Background</code>
@@ -72,7 +166,6 @@
     - **text-transform: uppercase;** // VIẾT CHỮ HOA
     - **text-transform: lowercase;**   // viết chữ thường
     - **text-transform: capitalize;**  // viết hoa chữ cái đầu
-
 ## List
 1. <code>list-style-type</code>
     ```CSS
@@ -84,8 +177,6 @@
     list-style-type: upper-roman;       /* Số La Mã: I, II, III */
     list-style-type: lower-alpha;       /* Chữ cái: a, b, c */
     ```
-
-
 ## Display
 1. <code>display</code>
     ```CSS
