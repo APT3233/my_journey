@@ -84,15 +84,6 @@
         transform: translateY(-2px);
     }
     ```
-5. Footer
-5.1 Row
-    ```css
-
-    ```
-5.2 Column
-    ```css
-
-    ```
 
 ## Background
 1. <code>Background</code>
@@ -109,11 +100,11 @@
     - **padding-box**: Đổ màu từ content cho đến hết padding.
     - **content-box**: Chỉ đổ màu phần content
     
-2. <code>background-image</cpde>
+2. <code>background-image</code>
     - Nền là hình ảnh hoặc màu gradient.
-    ```CSS
-    background-image: url("path");
-    ```
+        ```CSS
+        background-image: url("path");
+        ```
 3. <code>background-size:</code>
     - Kích thước của background
     ```CSS
