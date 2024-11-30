@@ -197,7 +197,7 @@
     overflow: scroll;  /* Luôn hiển thị thanh cuộn ngang và dọc */
     overflow: auto;    /* Thanh cuộn tự động hiển thị nếu cần */
     ```
-5. <code>opacity<code>
+5. <code>opacity</code>
 - Độ mờ
     ```CSS
     opacity: 0.6; /* Element sẽ mờ đi 40% */

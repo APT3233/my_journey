@@ -564,6 +564,15 @@
     ```
     - Cách sử dụng: Thay đổi các thuộc tính CSS của phần tử.
     - Ví dụ: `element.style.backgroundColor = "blue"` sẽ thay đổi màu nền của phần tử thành màu xanh.
+17. **innerHTML**
+    ```javascript
+    let element = document.getElementById("myElement");
+    element.innerHTML = "Hello, World!";
+    ```
+    - Cách sử dụng: Dùng để thay đổi nội dung HTML của một phần tử trong trang web.
+    - Ví dụ: `element.innerHTML = "Hello, World!";` sẽ thay đổi nội dung của phần tử có `id="myElement"` thành "Hello, World!".
+    - Lưu ý: Thao tác này có thể làm thay đổi cấu trúc của trang nếu bạn sử dụng HTML trong chuỗi.
+
 ## Dom event
 1. **addEventListener()**
     ```javascript
