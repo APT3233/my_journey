@@ -25,7 +25,7 @@
             ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
             ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
 
-            ssl_session_cache shared:le_nginx_SSL:10;
+            ssl_session_cache shared:le_nginx_SSL:10m;
             ssl_session_timeout 1440m;
 
             ssl_protocols TLSv1.2 TLSv1.3;
