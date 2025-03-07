@@ -1,6 +1,40 @@
 # React CheatSheet
 
 1. [Syntax](#syntax)
+2. [Negative](#negative)
+
+### Negative
+1. **useNavigate()**
+    ```javascript
+    import React from 'react';
+    import { useNavigate } from 'react-router-dom';
+
+    function HomeButton() {
+      const navigate = useNavigate();
+
+      return (
+        <button onClick={() => navigate('/')}>Go Home</button>
+      );
+    }
+    ```
+    - **Cách sử dụng**: `useNavigate` là một hook được cung cấp bởi `React Router` để điều hướng người dùng đến các route khác trong ứng dụng.
+    - **Ví dụ**: Trong ví dụ trên, khi nhấn vào nút "Go Home", người dùng sẽ được điều hướng đến route `/` (trang chủ).
+
+2. **`<Navigate to='/'/>`**
+    ```javascript
+    import React from 'react';
+    import { Navigate } from 'react-router-dom';
+
+    function ProtectedRoute({ isLoggedIn }) {
+      if (!isLoggedIn) {
+        return <Navigate to="/login" />;
+      }
+
+      return <div>Welcome to the protected page!</div>;
+    }
+    ```
+    - **Cách sử dụng**: `<Navigate />` là một component được cung cấp bởi React Router để điều hướng người dùng dựa trên điều kiện nhất định.
+    - **Ví dụ**: Trong ví dụ trên, nếu `isLoggedIn` là `false`, người dùng sẽ được chuyển hướng đến trang `/login`. Nếu không, họ sẽ thấy nội dung của trang bảo vệ.
 
 ### Hook
 1. **useState()**

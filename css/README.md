@@ -70,6 +70,7 @@
     }
     ```
 4.2 `button`
+
     ```css
     button{
         background-color: #ff9933;
@@ -85,6 +86,12 @@
     }
     ```
 
+4.3 button color
+
+    ```css
+    linear-gradient(90deg, rgba(92, 89, 228, 1) 0%, rgba(39, 158, 255, 1) 44%);
+    linear-gradient(90deg, rgba(161, 159, 243, 1) 0%, rgba(113, 189, 252, 1) 44%);
+    ```
 ## Background
 1. <code>Background</code>
     - Thêm màu nền vào element
